@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shiva Shankar R — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header fade-in">
+    <div class="container header-grid">
+      <div class="hero slide-in-left">
+        <img class="avatar" src="profie photo.jpg" alt="Shiva Shankar R — photo">
+        <div class="hero-text">
+          <h1>Shiva Shankar R</h1>
+          <p class="tag">Aspiring Python Developer • ML & Computer Vision enthusiast</p>
+          <div class="contact-row">
+            <a href="mailto:shivashankarr9035@gmail.com">shivashankarr9035@gmail.com</a>
+            <span>•</span>
+            <a href="tel:+919035788334">+91 90357 88334</a>
+          </div>
+          <div class="cta-row">
+            <a class="btn" href="C:\Users\Shiva Shankar R\Downloads\Shiva Shankar R_resumeP.pdf" download>Download Resume</a>
+            <a class="btn ghost" href="#projects">View Projects</a>
+          </div>
+        </div>
+      </div>
+      <nav class="top-nav slide-in-right">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card fade-up">
+      <h2>About Me</h2>
+      <p>
+        As a fresher with a strong foundation in Python programming and problem-solving, 
+        I am eager to begin my career as a Python Developer. I aim to contribute to building 
+        efficient, scalable, and reliable applications while continuously learning and 
+        enhancing my technical expertise.
+      </p>
+    </section>
+
+    <section id="skills" class="card two-col fade-up">
+      <div>
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+          <li><strong>Languages:</strong> Python, SQL, Basic Java</li>
+          <li><strong>Frontend:</strong> HTML, CSS, JavaScript (basic)</li>
+          <li><strong>ML / CV:</strong> TensorFlow, YOLOv8, CNNs</li>
+          <li><strong>Cloud / Tools:</strong> AWS fundamentals, Git, Streamlit</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Soft & Other Skills</h2>
+        <ul class="skills-list">
+          <li>Problem-solving</li>
+          <li>Research</li>
+          <li>Team collaboration</li>
+          <li>Logical thinking</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="card fade-up">
+      <h2>Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="project zoom-in">
+          <h3>Plant Leaf Disease Recognition</h3>
+          <p>Interactive Streamlit web app using TensorFlow to classify plant diseases. 
+             Trained CNN and YOLOv8 models on ~1.3K images dataset. Implemented preprocessing, 
+             inference, and real-time visualization.</p>
+          <p class="meta">Tech: Python, TensorFlow, YOLOv8, Streamlit</p>
+          <div class="project-links">
+            <a href="#">Live demo</a>
+            <a href="#">Source code</a>
+          </div>
+        </article>
+
+        <article class="project zoom-in">
+          <h3>Vehicle Detection System for Foggy Weather</h3>
+          <p>Designed a prototype to operate in foggy conditions with alerts (LEDs, buzzers, LCD). 
+             Demo showed functionality for improving road safety.</p>
+          <p class="meta">Tech: Computer Vision, Embedded systems</p>
+          <div class="project-links">
+            <a href="#">Demo video</a>
+            <a href="#">Project report</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="card fade-up">
+      <h2>Internship & Education</h2>
+      <div class="timeline">
+        <div class="timeline-item slide-in-left">
+          <h4>Data Engineering Virtual Internship</h4>
+          <p>Focused on AWS Cloud Computing fundamentals. Learned deploying and managing cloud-based solutions.</p>
+        </div>
+
+        <div class="timeline-item slide-in-right">
+          <h4>Gitam School of Technology — B.Tech (2023 - 2025)</h4>
+          <p>GPA: 7.8 / 10</p>
+        </div>
+
+        <div class="timeline-item slide-in-left">
+          <h4>Diploma — Board of Technical Education (2019)</h4>
+          <p>Percentage: 76.6%</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certs" class="card fade-up">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Coursera — Introduction to Object-Oriented Programming with Java</li>
+        <li>Fundamentals of C-programming Languages</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card contact-card fade-up">
+      <h2>Contact</h2>
+      <p>If you'd like to work together or have questions, reach out — I'm available for internships and junior roles.</p>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! This demo form doesn\\'t send messages. Replace handler with your backend.');"> 
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" rows="4" placeholder="Message" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-meta">
+        <p>Email: <a href="mailto:shivashankarr9035@gmail.com">shivashankarr9035@gmail.com</a></p>
+        <p>Phone: <a href="tel:+919035788334">+91 90357 88334</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer fade-in">
+    <div class="container">
+      <p>© <span id="year"></span> Shiva Shankar R — Built with ❤️ • Made for BTech portfolio</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
